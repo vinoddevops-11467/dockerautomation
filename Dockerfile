@@ -11,3 +11,4 @@ CMD ["-g", "daemonoff;"]
 EXPOSE 80
 EXPOSE 8090
 ENV root_password=test123
+ADD https://visualpath.teachable.com/
