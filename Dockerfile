@@ -5,7 +5,7 @@ RUN apt update
 RUN apt upgrade -y
 RUN apt install -y nginx
 WORKDIR /var/www/html
-WORKDIR /usr/share/nginx/html
+WORKDIR /usr/share/nginx/htmll
 ENTRYPOINT ["nginx"]
 CMD ["-g", "daemonoff;"]
 EXPOSE 80
