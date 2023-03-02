@@ -9,6 +9,6 @@ WORKDIR /usr/share/nginx/html
 ENTRYPOINT ["nginx"]
 CMD ["-g", "daemonoff;"]
 EXPOSE 80
-EXPOSE 8090
+COPY /usr/share/nginx/html
 ENV root_password=test123
 ADD https://visualpath.teachable.com/
